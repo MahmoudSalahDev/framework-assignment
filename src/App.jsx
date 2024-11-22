@@ -11,12 +11,12 @@ function App() {
 
   const routes = createBrowserRouter([
     {
-      path: "/framework-assignment/", element: <Layout />, children: [
+      path: "/", element: <Layout />, children: [
         { index: true, element: <Home /> },
-        { path: "/framework-assignment/about", element: <About /> },
-        { path: "/framework-assignment/portfolio", element: <Portfoilo /> },
-        { path: "/framework-assignment/contact", element: <Contact /> },
-        { path: "/framework-assignment/*", element: <Notfound /> },
+        { path: "/about", element: <About /> },
+        { path: "/portfolio", element: <Portfoilo /> },
+        { path: "/contact", element: <Contact /> },
+        { path: "/*", element: <Notfound /> },
       ]
     }
   ])
